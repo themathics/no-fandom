@@ -1,0 +1,18 @@
+! Title: Distractions Blocklist
+! Expires: 1 day
+! Description: Removes fandom.com from search results to allow for indie wikis to populate in their place.
+
+duckduckgo.com,bing.com##a[href*="fandom.com"]:upward(li):remove()
+duckduckgo.com,bing.com##a[href*="wikia.com"]:upward(li):remove()
+google.com##a[href*="fandom.com"]:upward(2):remove()
+google.com##a[href*="wikia.com"]:upward(2):remove()
+www.startpage.com###main div.result a[href*="fandom.com"]:upward(.result)
+www.startpage.com###main div.result a[href*="wikia.com"]:upward(.result)
+www.startpage.com##span:has-text(fandom.com):upward(div.image-inner-container):remove()
+www.startpage.com##span:has-text(wikia.com):upward(div.image-inner-container):remove()
+search.brave.com##div.snippet:has(a[href*="fandom.com"])
+search.brave.com##div.snippet:has(a[href*="wikia.com"])
+search.brave.com##span:has-text(fandom.com):upward(button.image-result):remove()
+search.brave.com##span:has-text(wikia.com):upward(button.image-result):remove()
+ecosia.org##a[href*="fandom.com"]:upward(2)
+ecosia.org##a[href*="wikia.com"]:upward(2)
