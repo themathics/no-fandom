@@ -1,4 +1,4 @@
-! Title: Distractions Blocklist
+! Title: No Fandom Search Result Blocklist
 ! Expires: 1 day
 ! Description: Removes fandom.com from search results to allow for indie wikis to populate in their place.
 
